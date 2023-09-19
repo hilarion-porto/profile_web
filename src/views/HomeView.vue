@@ -25,100 +25,180 @@ import Contact from '@/components/contact/Contact.vue';
     <Project />
     <Contact /> -->
   </main>
-
-  <section class="container">
+   <div class="wrapper">
     <div class="left">
-      <article>
-        <h1>My Profile</h1>
-        <a href="" class="button">Explore</a>
-      </article>
-      
+      <img class="self-image" src="/src/assets/image/self-pict.jpeg" alt="Avatar">
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere at temporibus mollitia blanditiis nemo explicabo, veritatis aperiam, quaerat fuga provident id nobis dolor quos inventore fugit atque illum? Illum, quas.</p> -->
+      <div class="container-button-left">
+        <a class="btn btn-border-4" href="">About Me</a>
+      </div>
     </div>
-    <div class="right">
-      <article>
-        <h1>Projects</h1>
-        <a href="" class="button">Explore</a>
-      </article>
+      <div class="right">
+      <!-- <p>this is the right pane</p> -->
+        <div class="container-button-right">
+          <a class="btn btn-border-5" href="">Projects</a>
+        </div>
+      </div>
     </div>
-  </section>
 </template>
 
-
 <style scoped>
-  @import url('https://fonts.googleapis.com/css?family=Kodchasan');
-
-  html, body, section{
-    height: 100%;
-    width: 100%;
+  * {
+    box-sizing: border-box;
   }
-  body{
-    color:#fff;
-    text-align:center;
-    width: 100%;
-    height: 100%;
-  }
-  .container{
-    display:flex;
-    margin: 0;
+  body {
     padding: 0;
+    margin: 0;
   }
-  div{
+  p {
+    padding: 0 10px;
+  }
+  .wrapper {
     display:flex;
-    flex-direction:column;
-    justify-content:center;
   }
-  .left{
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(255,255,255,0.10)), url(https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-size:cover;
-    background-position:center;
-    flex:1;
-    padding:1rem;
-    transition: all .2s ease-in-out;
-    /* width: 100vw;
-    height: 100vw; */
-    height: 80vw;
+  .self-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 80%;
+    /* max-width: 200px; */
+    height: 250px;
+    padding: 20px 0px 0px 0px ;
   }
-  .right{
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(164,222,102,0.10)), url(https://images.pexels.com/photos/129830/pexels-photo-129830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-size:cover;
-    background-position:center;
-    flex:1;
-    padding:1rem;
-    transition: all .2s ease-in-out;
-    /* width: 100vw;
-    height: 100vw; */
-    height: 80vw;
+  .left {
+    background-color: rgb(255, 255, 255);
+    color: white;
   }
-  .left:hover, .right:hover{
-    transform: scale(0.95);
+  .left,
+  .right {	
+    width: 50%;	
+    height: 100%;
+  }
+  .right {
+    height: 100vh;
+    color: white;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    transition: all .5s ease-in;
+    background-image: url('/src/assets/image/code-screen4.jpeg');
+    /* background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)); */
+    box-shadow: inset 0 0 0 2000px rgba(255, 0, 150, 0.3);
+    background-size: 100% 100%;
+  }
+  .container-button-left {
+    position: flex;
+    /* left: 50%; */
+    top: 50%;
+    bottom: 50%;
+    /* margin: 50px auto; */
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    /* background: #ffffff; */
+}
+  .container-button-right {
+    /* margin: auto auto auto auto; */
+    /* display: block; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    /* background: #ffffff; */
+}
+
+  .btn {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 27px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #999999;
+    background: #ffffff;
+    border: 3px solid #999999;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
   }
 
-  .left h1{
-    font-family: 'Kodchasan', sans-serif;
-    font-size:4em;
+  .btn.btn-border-4::after,
+  .btn.btn-border-4::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      transition: .5s;
   }
-  .right h1{
-    font-family: 'Kodchasan', sans-serif;
-    font-size:4em;
+
+  .btn.btn-border-4::after {
+      top: -9px;
+      left: -9px;
+      border-top: 3px solid transparent;
+      border-left: 3px solid transparent;
   }
-  .button{
-    border-radius:30px;
-    color:#fff;
-    text-decoration:none;
-    background-color:#fcad26;
-    padding:15px 25px;
-    margin:0 2%;
-    text-align:center;
-    font-weight:bold;
-    display:inline-block;
-    font-size:1.5em;
-    cursor:pointer;
-    transition:all 0.3s;
-    width: 150px;
-    
+
+  .btn.btn-border-4::before {
+      bottom: -9px;
+      right: -9px;
+      border-bottom: 3px solid transparent;
+      border-right: 3px solid transparent;
   }
-  .button:hover{
-    background: #fcc567;
-    color:#fff;
+
+  .btn.btn-border-4:hover {
+      color: #222222;
+  }
+
+  .btn.btn-border-4:hover::after,
+  .btn.btn-border-4:hover::before {
+      width: calc(100% + 15px);
+      height: calc(100% + 15px);
+      border-color: #222222;
+  }
+
+
+  .btn.btn-border-5::after,
+  .btn.btn-border-5::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      transition: .5s;
+  }
+
+  .btn.btn-border-5::after {
+      top: -9px;
+      left: -9px;
+      border-top: 3px solid transparent;
+      border-left: 3px solid transparent;
+  }
+
+  .btn.btn-border-5::before {
+      bottom: -9px;
+      right: -9px;
+      border-bottom: 3px solid transparent;
+      border-right: 3px solid transparent;
+  }
+
+  .btn.btn-border-5:hover {
+      color: #222222;
+  }
+
+  .btn.btn-border-5:hover::after,
+  .btn.btn-border-5:hover::before {
+      width: calc(100% + 15px);
+      height: calc(100% + 15px);
+      border-color: #0cfd9d;
   }
 </style>
