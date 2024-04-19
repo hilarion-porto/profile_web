@@ -1,0 +1,33 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "exclude": [
+    "node_modules", 
+    "**/*.spec.ts", 
+    "out/**",
+    "src/**/__tests__/*"
+  ],
+  "include": [
+    "**/*.ts", 
+    "env.d.ts", "src/**/*.vue"
+  ],
+  "files": [
+  ],
+  "compilerOptions": {
+    "outDir": "out",
+    "module": "commonjs",
+    "target": "es6",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
