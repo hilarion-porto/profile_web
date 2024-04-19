@@ -17,7 +17,7 @@
     "module": "commonjs",
     "target": "es6",
     "moduleResolution": "node",
-    "allowJs": false,
+    "allowJs": true,
     "alwaysStrict": true,
     "noImplicitAny": true,
     "removeComments": true,
