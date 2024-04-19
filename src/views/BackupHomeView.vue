@@ -43,48 +43,22 @@ import router from '@/router';
     <Project />
     <Contact /> -->
   </main>
-  <div>
-    <div>
-
+   <div class="wrapper">
+      <div class="left">
+        <img class="self-image" src="/src/assets/image/self-pict.jpeg" alt="Avatar">
+        <div class="container-button-left">
+            <a class="btn btn-border-4" @click="navigateToAboutPage">About Me</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="container-button-right">
+          <a class="btn btn-border-5" href="">Projects</a>
+        </div>
+      </div>
     </div>
-    <div class="grid grid-flow-col justify-stretch ...">
-      <div class="flex items-center justify-center h-screen bg-emerald-500">
-        <!-- <img class="self-image float-start" src="/src/assets/image/self-pict.jpeg" alt="Avatar"> -->
-        <a class="btn btn-border-4" @click="navigateToAboutPage">About Me</a>
-      </div>
-      <div class="flex items-center justify-center h-screen right-side">
-        <a class="btn btn-border-5 " href="">Projects</a>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="grid grid-cols-2 place-content-around gap-0"> -->
-  <!-- <div class="left">
-      <img class="self-image" src="/src/assets/image/self-pict.jpeg" alt="Avatar">
-      <div class="container-button-left">
-        <a class="btn btn-border-4" @click="navigateToAboutPage">About Me</a>
-      </div>
-    </div> -->
-  <!-- <div class="right"> -->
-  <!-- <img class="self-image" src="/src/assets/image/self-pict.jpeg" alt="Avatar"> -->
-  <!-- <div class="container-button-right">
-        <a class="btn btn-border-5" href="">Projects</a>
-      </div>
-    </div> -->
-  <!-- </div> -->
 </template>
 
 <style scoped>
-.right-side {
-  color: white;
-  background-color: black;
-  position: sticky;
-  top: 0;
-  transition: all .5s ease-in;
-  background-image: url('/src/assets/image/code-screen4.jpeg');
-  /* background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)); */
-  box-shadow: inset 0 0 0 2000px rgba(255, 0, 150, 0.3);
-  background-size: 100% 100%;
-}
   * {
     box-sizing: border-box;
   }
@@ -145,14 +119,12 @@ import router from '@/router';
     /* background: #ffffff; */
 }
   .container-button-right {
-    /* margin: auto auto auto auto;
-    display: block; */
+    /* margin: auto auto auto auto; */
+    /* display: block; */
     position: absolute;
     left: 50%;
     top: 50%;
-    margin: 50px auto;
-
-    /* -webkit-transform: translate(-50%, -50%); */
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
