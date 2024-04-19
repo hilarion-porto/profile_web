@@ -8,35 +8,42 @@ export default {
         {
           position: "Technical Head",
           company: "PT Pintar Cari Usaha",
-          term: "Dec 2021 - Present"
+          term: "Dec 2021 - Present",
+          startDate: "2014-12-21T00:00:00.000Z",
+          endDate: "",
         },
         {
           position: "Senior Mobile Developer",
           company: "PT Decathlon Indonesia",
-          term: "Nov 2020 - Aug 2021"
+          term: "Nov 2020 - Aug 2021",
+          startDate: "2014-11-20T00:00:00.000Z",
+          endDate: "2014-08-21T00:00:00.000Z",
         },
         {
           position: "Fullstack Developer",
           company: "PT Crowde Membangun Bangsa",
-          term: "March 2020 - Oct 2020"
+          term: "March 2020 - Oct 2020",
+          startDate: "2014-03-20T00:00:00.000Z",
+          endDate: "2014-04-20T00:00:00.000Z",
         },
         {
           position: "Mobile Developer",
           company: "PT Fore Coffee Indonesia",
-          term: "Sept 2019 - Feb 2020"
+          term: "Sept 2019 - Feb 2020",
+          startDate: "2014-04-20T00:00:00.000Z",
+          endDate: "2014-04-20T00:00:00.000Z",
         },
         {
           position: "Backend Developer",
           company: "PT Halo Komunikasi Sejahtera",
-          term: "March - Aug 2019"
+          term: "March - Aug 2019",
+          startDate: "2014-04-20T00:00:00.000Z",
+          endDate: "2014-04-20T00:00:00.000Z",
         },
       ]
     }
   },
   methods: {
-    plus() {
-      this.a++
-    }
   },
   created() {
     this.plus()
