@@ -34,7 +34,7 @@ export default {
         series: [
           {
             name: "Radar Series 1",
-            data: [70, 90, 90, 90, 60, 60]
+            data: [70, 90, 90, 90, 65, 60]
           },
           // {
           //   name: "Radar Series 2",

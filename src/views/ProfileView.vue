@@ -54,7 +54,7 @@
     do {
         if (target == scrollContainer) break;
         targetY += target.offsetTop;
-        console.log("targetY: ", targetY);
+        // console.log("targetY: ", targetY);
     } while (target = target.offsetParent);
 
     scroll = function(c, a, b, i) {
@@ -63,9 +63,9 @@
         setTimeout(function(){ scroll(c, a, b, i); }, 1);
     }
 
-    console.log("scrollContainer: ", scrollContainer);
-    console.log("scrollContainer.scrollTop: ", scrollContainer.scrollTop);
-    console.log("targetY: ", targetY);
+    // console.log("scrollContainer: ", scrollContainer);
+    // console.log("scrollContainer.scrollTop: ", scrollContainer.scrollTop);
+    // console.log("targetY: ", targetY);
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
   }
@@ -178,12 +178,12 @@ function openMenu(params: String) {
         </div>
       </div>
       <div id="parallax-item2" class="parallax-item2">
-        <div class="mt-20">
+        <div class="mt-20 mb-10">
           <SkillChart />
         </div>
       </div>
       <div id="parallax-item3" class="parallax-item3">
-        <div class="mt-20">
+        <div class="mt-20 mb-10">
           <WorkingExperience/>
           <!-- <h2>Div 3</h2> -->
         </div>
