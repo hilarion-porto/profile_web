@@ -2,13 +2,16 @@
   "name": "profile_web",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://Hilarion18.github.io/hilarion_profile",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
+    "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build" 
   },
   "dependencies": {
     "apexcharts": "^3.48.0",
@@ -24,6 +27,7 @@
     "@vitejs/plugin-vue-jsx": "^3.0.2",
     "@vue/tsconfig": "^0.4.0",
     "autoprefixer": "^10.4.19",
+    "gh": "^2.8.9",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.38",
     "sass": "^1.67.0",
