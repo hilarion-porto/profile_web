@@ -2,7 +2,7 @@
   "name": "profile_web",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://Hilarion18.github.io/hilarion_profile",
+  "homepage": "https://hilarion-porto.github.io/profile_web",
   "scripts": {
     "start": "vite",
     "dev": "vite",
