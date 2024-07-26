@@ -11,7 +11,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "predeploy": "npm run build", 
-    "deploy": "gh-pages -d build" 
+    "deploy": "gh-pages -d dist" 
   },
   "dependencies": {
     "apexcharts": "^3.48.0",
