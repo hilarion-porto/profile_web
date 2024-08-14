@@ -50,7 +50,13 @@ export default {
 
 
 <template>
-  <div class="grid grid-rows-3 grid-flow-col gap-4">
+  <!-- <div class="flex flex-col space-y-4 ...">
+  <div>01</div>
+  <div>02</div>
+  <div>03</div>
+</div> -->
+
+  <div class="grid grid-rows-2 grid-flow-col gap-4">
     <div
       class="row-span-3 mt-2 mb-5 pb-3 pl-2 pr-2 border-solid col grid-flow-col border-2 rounded-md border-sky-500 ...">
       <div>
@@ -82,7 +88,6 @@ export default {
       </div>
     </div>
     <div class="row-span-3 ">
-      <!-- <StatDiagram/>  -->
       <apexchart width="500" type="radar" :options="options" :series="options.series"></apexchart>
     </div>
   </div>
@@ -97,5 +102,11 @@ export default {
         /* max-width: 200px; */
         height: 250px;
         padding: 20px 0px 0px 0px;
+    }
+    div {
+      color: black;
+    }
+    .section {
+      width: 1000px;
     }
 </style>

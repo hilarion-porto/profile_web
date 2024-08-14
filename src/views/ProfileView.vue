@@ -145,7 +145,7 @@ function openMenu(params: String) {
             </div>
           </div>
         </nav> -->
-      <nav class="navbar">
+      <!-- <nav class="navbar">
         <div class="navbar-container container">
           <input type="checkbox" name="" id="">
           <div class="hamburger-lines">
@@ -154,21 +154,16 @@ function openMenu(params: String) {
             <span class="line line3"></span>
           </div>
           <ul class="menu-items">
-            <!-- <li><a id="cursor-item" onclick="smoothScroll(document.getElementById('parallax-item1'))">Projects</a></li> -->
             <li><a id="cursor-item" onclick="smoothScroll(document.getElementById('parallax-item1'))">About</a></li>
             <li><a id="cursor-item" onclick="smoothScroll(document.getElementById('parallax-item2'))">Stacks</a></li>
             <li><a id="cursor-item" onclick="smoothScroll(document.getElementById('parallax-item3'))">
                 Working Experience</a></li>
-            <!-- <li><a id="cursor-item" onclick="smoothScroll(document.getElementById('parallax-item4'))">Social Media</a></li> -->
-            <!-- <li><a href="#">Menu</a></li> -->
-            <!-- <li><a href="#">Testimonial</a></li> -->
-            <!-- <li><a href="#">Contact</a></li> -->
           </ul>
           <h1 id="cursor-item" class="logo" @click="navigateToHomePage">
             Hilarion
           </h1>
         </div>
-      </nav>
+      </nav> -->
     </header>
 
     <section>
@@ -177,7 +172,7 @@ function openMenu(params: String) {
           <ProfileDetail />
         </div>
       </div>
-      <div id="parallax-item2" class="parallax-item2">
+      <!-- <div id="parallax-item2" class="parallax-item2">
         <div class="mt-20 mb-10">
           <SkillChart />
         </div>
@@ -185,9 +180,8 @@ function openMenu(params: String) {
       <div id="parallax-item3" class="parallax-item3">
         <div class="mt-20 mb-10">
           <WorkingExperience/>
-          <!-- <h2>Div 3</h2> -->
         </div>
-      </div>
+      </div> -->
       <!-- <div id="parallax-item4" class="parallax-item4">
         <h2>Div 4</h2>
       </div> -->
@@ -419,7 +413,7 @@ function openMenu(params: String) {
     font-weight: bold;
     font-family: Montserrat, sans-serif;
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* background: url("https://images.unsplash.com/photo-1663305411753-4c305e177ff3?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NDA4ODE&ixlib=rb-1.2.1&q=80"); */
     background-size: cover;
     background: #fafafa;
